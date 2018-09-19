@@ -8,8 +8,8 @@ goto fail
 call "C:\Users\domin\Desktop\tasks\runcrud.bat"
 if "%ERRORLEVEL%" == "0" goto rungooglechrome
 
-:rungooglechrome
-start https://www.google.com/
+:runapp
+start http://localhost:8080/crud/v1/task/getTasks
 goto end
 
 :fail
